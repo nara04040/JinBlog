@@ -6,7 +6,7 @@ date: "2024-06-24"
 
 이벤트 루프 -> JavaScript런타임환경 -> web apis -> callback queue -> microtask, task, rAF로 우선순위 -> 이벤트 루프가 call stack 주시, 삽입 -> 이렇게 비동기작업이 가능
 
-### JavaScript는 싱글쓰레드
+## JavaScript는 싱글쓰레드
 
 우리가 말하는 "JavaScript는 [[싱글쓰레드]]이다."라는 말은 설계 구조상 쓰레드가 하나로 설계되었다.
 즉 한 번에 하나의 작업만 수행이 가능합니다.
@@ -16,7 +16,7 @@ date: "2024-06-24"
 > 스레드란
 > 한 프로세스에서 여러 업무를 배정받는 일꾼의 단위
 
-#### JavaScript 구조
+### JavaScript 구조
 
 위 물음을 좀 더 파고들어 정의하자면,
 "JavaScript가 싱글스레드라는 것은 하나의 [[메인쓰레드]]와 하나의 [[콜스택]]을 가지고있다."라고 말할 수 있다.
@@ -29,7 +29,7 @@ date: "2024-06-24"
 
 여기서 Call Stack을 더 알아보면 JavaScript의 메인스레드에서 호출되는 함수들이 여기 Call Stack에 쌓이게 되며 LIFO방식으로 실행이 됩니다.
 
-### 그렇다면 JavaScript내부엔진에서 비동기를 지원하냐?
+## 그렇다면 JavaScript내부엔진에서 비동기를 지원하냐?
 
 이 질문에서 제 답은 JavaScript엔진에서는 비동기작업을 지원하지 않습니다. 입니다.
 
