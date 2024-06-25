@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <h1 className="flex items-center justify-center font-bold	">☕️ Dev.Jin</h1>
                 <nav className="ml-auto mr-3 text-sm font-medium space-x-6">
                   <Link href="/">Blog</Link>
-                  <Link href="/">Graph View</Link>
+                  <Link href="/graph-view">Graph View</Link>
                   <Link href="/about">About</Link>
                 </nav>
                 <ModeToggle />
